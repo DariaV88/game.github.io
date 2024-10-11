@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Game</title>
+  </head>
+  <body>
+    <div class="game">
+      <div class="obstacles"></div>
+      <img src="./assets/dragon-1.png" alt="" class="dragon" id="dragon-1" />
+      <div class="modal-play modal">
+        <div class="modal__block">
+          <h2>
+            Продержитесь как можно дольше, избегая препятствия. Для движения вверх используйте
+            клавишу <span>&uarr;</span>
+          </h2>
+          <span class="name-span">Введите имя:</span><input type="text" class="input" />
+          <button class="play">Играть</button>
+        </div>
+      </div>
+      <div class="modal-end modal">
+        <div class="modal__block end">
+          <h2>Игра окончена. Количество набранных вами очков:<span class="end-score">0</span></h2>
+          <!-- <button class="rating-btn">Таблица результатов</button> -->
+        </div>
+        <div class="modal__block rating">
+          <h2>Таблица результатов</h2>
+        </div>
+      </div>
+      <div class="scores">
+        <p>Очки:</p>
+        <p class="score">0</p>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
